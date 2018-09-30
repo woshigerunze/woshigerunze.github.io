@@ -355,7 +355,7 @@
       
         
           
-            <p>#从C到C++<br>用习惯C的同学会出现如下代码:<br>1.<code>int *p=&amp;a;</code><br>或者:<br>2.<code>int i=0;for(i=0;i&lt;len;i++);</code>  </p>
+            <h1 id="从C到C"><a href="#从C到C" class="headerlink" title="从C到C++"></a>从C到C++</h1><p>用习惯C的同学会出现如下代码:<br>1.<code>int *p=&amp;a;</code><br>或者:<br>2.<code>int i=0;for(i=0;i&lt;len;i++);</code>  </p>
 <p>  这都不是现代C++应该出现的代码风格，首先<code>int*</code>表示一个指向<code>int</code>类型的指针，而<code>int *p</code>则会让人误以为指针<code>p</code>的值（或者说指向一个value为2，类型为<code>int</code>的变量）。<br>  所以需要更换为如下写法：<br>  <code>int* p=&amp;a;</code><br>  第2种写法会导致函数一开始变量名过多，阅读代码不易,例如:<br>  <code>int i,j,k,m,n;</code>  </p>
 <h2 id="如果再套一大堆循环就更想打人了……"><a href="#如果再套一大堆循环就更想打人了……" class="headerlink" title="  如果再套一大堆循环就更想打人了……  "></a>  如果再套一大堆循环就更想打人了……  </h2><p>  暂时先说这么多了，markdown语法不太熟悉0.0 希望这篇文章能改变你的C风格.</p>
 
