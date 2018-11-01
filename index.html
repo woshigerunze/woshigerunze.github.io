@@ -557,7 +557,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  483
+                  993
                 </span>
               
 
@@ -573,7 +573,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  4
                 </span>
               
             </div>
@@ -621,15 +621,27 @@
 <li>遍历哈希表，把value==1的string作为结果返回</li>
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; uncommonFromSentences(<span class="built_in">string</span> A, <span class="built_in">string</span> B) &#123;</span><br><span class="line">       <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res;</span><br><span class="line">        <span class="keyword">if</span>(A.size()==<span class="number">0</span>&amp;&amp;B.size()==<span class="number">0</span>)<span class="keyword">return</span> res;</span><br><span class="line">        <span class="built_in">unordered_map</span>&lt;<span class="built_in">string</span>,<span class="keyword">int</span>&gt; <span class="built_in">map</span>;</span><br><span class="line">        <span class="keyword">int</span> slow=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> fast=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(fast&lt;A.size())</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span>(fast&lt;A.size()&amp;&amp;A[fast]!=<span class="string">' '</span>)fast++;</span><br><span class="line">            <span class="function"><span class="built_in">string</span> <span class="title">temp</span><span class="params">(A,slow,fast-slow)</span></span>;<span class="comment">//STL string用法</span></span><br><span class="line">            <span class="built_in">map</span>[temp]++;</span><br><span class="line">            <span class="keyword">if</span>(++fast&lt;A.size())</span><br><span class="line">            &#123;</span><br><span class="line">                slow=fast;</span><br><span class="line">            &#125;<span class="comment">//fast一定要自增，不然死循环</span></span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        slow=<span class="number">0</span>;</span><br><span class="line">        fast=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(fast&lt;B.size())<span class="comment">//同上个while循环，功能一样</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span>(fast&lt;B.size()&amp;&amp;B[fast]!=<span class="string">' '</span>)fast++;</span><br><span class="line">            <span class="function"><span class="built_in">string</span> <span class="title">temp</span><span class="params">(B,slow,fast-slow)</span></span>;</span><br><span class="line">            <span class="built_in">map</span>[temp]++;</span><br><span class="line">            <span class="keyword">if</span>(++fast&lt;B.size())</span><br><span class="line">            &#123;</span><br><span class="line">                slow=fast;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> it:<span class="built_in">map</span>)</span><br><span class="line">            <span class="keyword">if</span>(it.second==<span class="number">1</span>)res.push_back(it.first);</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><img src="/Users/gerunze/blog/source/image/QQ20181031-223631@2x.png" alt="Alt text"></li>
-</ul>
-<blockquote>
-<p>C++STL库string类里没有像Java里split函数，不能直接用库函数完成拆分单词的任务，但是有兴趣可以取搜一下实现算法。</p>
+<h3 id="词汇分割器库-Boost-Tokenizer"><a href="#词汇分割器库-Boost-Tokenizer" class="headerlink" title="词汇分割器库 Boost.Tokenizer"></a>词汇分割器库 Boost.Tokenizer</h3><blockquote>
+<p>很幸运，C++ &lt;boost/tokenizer.hpp&gt; 为我们实现了词汇分割器，这样我们就不用自己实现分割函数了。</p>
 </blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;boost/tokenizer.hpp&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt; </span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">  <span class="keyword">typedef</span> boost::tokenizer&lt;boost::char_separator&lt;<span class="keyword">char</span>&gt; &gt; tokenizer; </span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">string</span> s = <span class="string">"Boost C++ libraries"</span>; </span><br><span class="line">  <span class="function">tokenizer <span class="title">tok</span><span class="params">(s)</span></span>; </span><br><span class="line">  <span class="keyword">for</span> (tokenizer::iterator it = tok.begin(); it != tok.end(); ++it) </span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; *it &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Boost.Tokenizer 库在 <code>boost/tokenizer.hpp</code> 文件中定义了模板类 <code>boost::tokenizer</code> ，其模板参数为支持相关表达式的类。 上面的例子中就使用了 <code>boost::char_separator</code> 类作为模板参数，它将空格和标点符号视为分隔符。</p>
+<p>词汇分割器必须由类型为 <code>std::string</code> 的字符串初始化。通过使用 <code>begin()</code> 和 <code>end()</code> 方法，词汇分割器可以像容器一样访问。通过使用迭代器，可以得到前述字符串的部分表达式。模板参数的类型决定了如何达到部分表达式。</p>
+<p>因为 <code>boost::char_separator</code> 类默认将空格和标点符号视为分隔符，所以本例显示的结果为 <code>Boost</code> 、 <code>C</code> 、 <code>+</code> 、 <code>+</code> 和<code>libraries</code> 。 为了识别这些分隔符， <code>boost::char_separator</code> 函数调用了 <code>std::isspace()</code> 函数和 <code>std::ispunct 函数。 ()</code>Boost.Tokenizer 库会区分要隐藏的分隔符和要显示的分隔符。 在默认的情况下，空格会隐藏而标点符号会显示出来，所以这个例子里显示了两个加号。</p>
+<p>如果不需要将标点符号作为分隔符，可以在传递给词汇分割器之前相应地初始化 <code>boost::char_separator</code> 对象。 以下例子正式这样做的。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;boost/tokenizer.hpp&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt; </span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">  <span class="keyword">typedef</span> boost::tokenizer&lt;boost::char_separator&lt;<span class="keyword">char</span>&gt; &gt; tokenizer; </span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">string</span> s = <span class="string">"Boost C++ libraries"</span>; </span><br><span class="line">  boost::char_separator&lt;<span class="keyword">char</span>&gt; sep(<span class="string">" "</span>); </span><br><span class="line">  <span class="function">tokenizer <span class="title">tok</span><span class="params">(s, sep)</span></span>; </span><br><span class="line">  <span class="keyword">for</span> (tokenizer::iterator it = tok.begin(); it != tok.end(); ++it) </span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; *it &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>输出结果：</p>
+<p>Boost</p>
+<p>C++</p>
+<p>libraries</p>
+</blockquote>
+<p>一般我们用第二个例子把” “作为分隔符就行了，注意是双引号(参数类型是string).</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
 <li>拆分单词算法要熟练掌握</li>
 <li>学会使用哈希表建立key-value关系</li>
+<li>Boost库是STL库的扩展，拥有STL所没有的功能</li>
+<li>在平时学语法的时候要积累常用的库函数</li>
 <li>本题难度不大，属于秒杀级别</li>
 </ul>
           <!--noindex-->
@@ -2367,7 +2379,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">10.7k</span>
+    <span title="Site words total count">11.2k</span>
   
 </div>
 
