@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="GeRunZe">
 <meta property="og:description" content="RFID复习提纲Ch1.RFID技术概述 RFID技​术的特点  电子标签技术(Radio Frequency Identification,RFID)作为一种快速、实时、准确采集与处理信息的高新技术和信息标准化的基础，被列为21世纪十大重要技术之一。 RFID是通过磁场或电磁场，利用无线射频方式进行非接触双向通信，以达到识别目的并交换数据。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-22T08:00:51.009Z">
+<meta property="og:updated_time" content="2018-11-24T14:05:03.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RFID复习">
 <meta name="twitter:description" content="RFID复习提纲Ch1.RFID技术概述 RFID技​术的特点  电子标签技术(Radio Frequency Identification,RFID)作为一种快速、实时、准确采集与处理信息的高新技术和信息标准化的基础，被列为21世纪十大重要技术之一。 RFID是通过磁场或电磁场，利用无线射频方式进行非接触双向通信，以达到识别目的并交换数据。">
@@ -345,7 +345,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  582
+                  1.1k
                 </span>
               
 
@@ -361,7 +361,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -407,7 +407,28 @@
 <li><p>RFID系统的组成</p>
 <ul>
 <li>硬件组成<ul>
-<li><strong>阅读器</strong></li>
+<li><strong>阅读器</strong><ul>
+<li>射频接口<ul>
+<li>产生高频发射能量，激活电子标签并为其提供能量</li>
+<li>对发射信号进行调制，将数据传输给电子标签</li>
+<li>接受并调制来自电子标签的射频信号</li>
+</ul>
+</li>
+<li>逻辑控制单元<ul>
+<li>与应用系统软件进行通信，并执行从应用系统软件发来的指令</li>
+<li>控制阅读器与电子标签的通信过程</li>
+<li>信号的编码与解码</li>
+<li>对阅读器和标签之间传输的数据进行加密和解密</li>
+<li>执行防碰撞算法</li>
+<li>对阅读器和标签的身份进行验证</li>
+</ul>
+</li>
+<li>天线<ul>
+<li>将接收到的电磁波转化为电流信号，或将电流信号转化为电磁波发射出去</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><strong>电子标签</strong><ul>
 <li>天线：用来接收阅读器送来的信号，并把要求的数据送回给阅读器</li>
 <li>电压调节器：把阅读器送来的射频信号转换为直流电源，并经大电容储存能量，再经稳压电路以提供稳定的电源</li>
@@ -420,8 +441,27 @@
 </ul>
 </li>
 <li>软件组成<ul>
-<li><strong>中间件</strong></li>
+<li><strong>中间件</strong><ul>
+<li>阅读器协调控制</li>
+<li>数据过滤与处理</li>
+<li>数据路由与集成</li>
+<li>进程管理</li>
+</ul>
+</li>
 <li><strong>RFID应用系统软件</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>RFID技术中的物理学原理</p>
+<ul>
+<li>天线场的概念<ul>
+<li>根据观测点与天线的距离将天线周围的 场划分为<strong>无功近场区</strong>、<strong>辐射近场区</strong>、<strong>辐射远场区</strong></li>
+</ul>
+</li>
+<li>能量耦合和数据传输<ul>
+<li>标签与读写器天线之间的耦合方式可以分为<strong>密耦合系统</strong>，<strong>遥耦合系统</strong>，<strong>远距离系统</strong></li>
+<li>读写器与电子标签之间通信通过<strong>电磁波</strong>实现，按照通信距离可分为<strong>远场</strong>和<strong>近场</strong>。读写器和标签之间数据交换方式也相应地分为<strong>负载调制</strong>和<strong>反向散射调制</strong></li>
 </ul>
 </li>
 </ul>
@@ -452,16 +492,35 @@
 </li>
 <li><p>RFID应用和发展面临的问题</p>
 <ul>
-<li><p><strong>标签成本问题</strong></p>
+<li><strong>标签成本问题</strong></li>
+<li><strong>标准制定问题</strong></li>
+<li><strong>公共服务体系问题</strong></li>
+<li><strong>产业链形成问题</strong></li>
+<li><strong>技术和安全问题</strong></li>
+</ul>
 </li>
-<li><p><strong>标准制定问题</strong></p>
+<li>RFID系统的分类<ul>
+<li>EAS系统</li>
+<li>便携式数据采集系统</li>
+<li>物流控制系统</li>
+<li>定位系统</li>
+</ul>
 </li>
-<li><p><strong>公共服务体系问题</strong></p>
-</li>
-<li><p><strong>产业链形成问题</strong></p>
-</li>
-<li><p><strong>技术和安全问题</strong></p>
-</li>
+</ul>
+<h2 id="Ch5-RFID电子标签"><a href="#Ch5-RFID电子标签" class="headerlink" title="Ch5.RFID电子标签"></a>Ch5.RFID电子标签</h2><ul>
+<li>电子标签的发展趋势<ul>
+<li><strong>作用距离更远</strong></li>
+<li><strong>无源可读写性能更加完善</strong></li>
+<li><strong>适合高速移动物体识别</strong></li>
+<li><strong>快速多标签读写功能</strong></li>
+<li><strong>一致性更好</strong></li>
+<li><strong>强磁场下的自保护功能更加完善</strong></li>
+<li><strong>智能型更强、加密特性更完善</strong></li>
+<li><strong>带有传感器功能的标签</strong></li>
+<li><strong>带有其他附属功能的标签</strong></li>
+<li><strong>新的生产工艺</strong></li>
+<li><strong>体积更小</strong></li>
+<li><strong>成本更低</strong></li>
 </ul>
 </li>
 </ul>
@@ -669,7 +728,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RFID复习提纲"><span class="nav-number">1.</span> <span class="nav-text">RFID复习提纲</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ch1-RFID技术概述"><span class="nav-number">1.1.</span> <span class="nav-text">Ch1.RFID技术概述</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RFID复习提纲"><span class="nav-number">1.</span> <span class="nav-text">RFID复习提纲</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ch1-RFID技术概述"><span class="nav-number">1.1.</span> <span class="nav-text">Ch1.RFID技术概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ch5-RFID电子标签"><span class="nav-number">1.2.</span> <span class="nav-text">Ch5.RFID电子标签</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -703,7 +762,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">13.2k</span>
+    <span title="Site words total count">13.7k</span>
   
 </div>
 
