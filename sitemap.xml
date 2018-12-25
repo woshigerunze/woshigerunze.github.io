@@ -4,7 +4,7 @@
   <url>
     <loc>http://yoursite.com/2018/12/26/signal/</loc>
     
-    <lastmod>2018-12-25T16:18:24.723Z</lastmod>
+    <lastmod>2018-12-25T16:21:01.071Z</lastmod>
     
   </url>
   
@@ -107,13 +107,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/c1.html</loc>
-    
-    <lastmod>2018-10-12T14:24:08.341Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/10/12/c1/</loc>
     
     <lastmod>2018-10-12T14:24:08.341Z</lastmod>
@@ -121,14 +114,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/article2.html</loc>
+    <loc>http://yoursite.com/c1.html</loc>
+    
+    <lastmod>2018-10-12T14:24:08.341Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/09/30/article2/</loc>
     
     <lastmod>2018-10-11T10:33:30.516Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/09/30/article2/</loc>
+    <loc>http://yoursite.com/article2.html</loc>
     
     <lastmod>2018-10-11T10:33:30.516Z</lastmod>
     
