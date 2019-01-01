@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/12/20/math/</loc>
-    
-    <lastmod>2018-12-20T14:39:22.685Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2018/12/10/nihaozhihua/</loc>
     
     <lastmod>2018-12-10T12:15:40.975Z</lastmod>
@@ -107,14 +100,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/10/12/c1/</loc>
+    <loc>http://yoursite.com/c1.html</loc>
     
     <lastmod>2018-10-12T14:24:08.341Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/c1.html</loc>
+    <loc>http://yoursite.com/2018/10/12/c1/</loc>
     
     <lastmod>2018-10-12T14:24:08.341Z</lastmod>
     
@@ -135,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/article1.html</loc>
+    <loc>http://yoursite.com/2018/09/30/article1/</loc>
     
     <lastmod>2018-10-10T14:38:34.925Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/09/30/article1/</loc>
+    <loc>http://yoursite.com/article1.html</loc>
     
     <lastmod>2018-10-10T14:38:34.925Z</lastmod>
     
