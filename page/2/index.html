@@ -262,6 +262,216 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/leetcode692/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GeRunZe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/headimage.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GeRunZe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/31/leetcode692/" itemprop="url">LeetCode692.前K个高频单词</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-31T23:23:48+08:00">
+                2018-10-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Leetcode/" itemprop="url" rel="index">
+                    <span itemprop="name">Leetcode</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  583
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="LeetCode-692-前K个高频单词"><a href="#LeetCode-692-前K个高频单词" class="headerlink" title="[LeetCode]692.前K个高频单词"></a><a href="https://leetcode-cn.com/problems/top-k-frequent-words/" target="_blank" rel="noopener">[LeetCode]692.前K个高频单词</a></h1><blockquote>
+<p>给一非空的单词列表，返回前 <em>k</em> 个出现次数最多的单词。</p>
+<p>返回的答案应该按单词出现频率由高到低排序。如果不同的单词有相同出现频率，按字母顺序排序。</p>
+<p><strong>示例 1：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; 输入: [&quot;i&quot;, &quot;love&quot;, &quot;leetcode&quot;, &quot;i&quot;, &quot;love&quot;, &quot;coding&quot;], k = 2</span><br><span class="line">&gt; 输出: [&quot;i&quot;, &quot;love&quot;]</span><br><span class="line">&gt; 解析: &quot;i&quot; 和 &quot;love&quot; 为出现次数最多的两个单词，均为2次。</span><br><span class="line">&gt; 注意，按字母顺序 &quot;i&quot; 在 &quot;love&quot; 之前。</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; 输入: [&quot;the&quot;, &quot;day&quot;, &quot;is&quot;, &quot;sunny&quot;, &quot;the&quot;, &quot;the&quot;, &quot;the&quot;, &quot;sunny&quot;, &quot;is&quot;, &quot;is&quot;], k = 4</span><br><span class="line">&gt; 输出: [&quot;the&quot;, &quot;is&quot;, &quot;sunny&quot;, &quot;day&quot;]</span><br><span class="line">&gt; 解析: &quot;the&quot;, &quot;is&quot;, &quot;sunny&quot; 和 &quot;day&quot; 是出现次数最多的四个单词，</span><br><span class="line">&gt; 出现次数依次为 4, 3, 2 和 1 次。</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p><strong>注意：</strong></p>
+<ol>
+<li>假定 <em>k</em> 总为有效值， 1 ≤ <em>k</em> ≤ 集合元素数。</li>
+<li>输入的单词均由小写字母组成。</li>
+</ol>
+<p><strong>扩展练习：</strong></p>
+<ol>
+<li>尝试以 <em>O</em>(<em>n</em> log <em>k</em>) 时间复杂度和 <em>O</em>(<em>n</em>) 空间复杂度解决。</li>
+</ol>
+</blockquote>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><ul>
+<li>用unordered_map&lt;string,int&gt;记录vector<string> word中的各个单词及其出现的次数</string></li>
+<li>用优先级队列对哈希表排序</li>
+<li>注意：题目要求次数相同按两个单词的字典序输出，所以要自定义优先级队列比较函数</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">cmp</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">operator</span><span class="params">()</span> <span class="params">(pair&lt;<span class="built_in">string</span>, <span class="keyword">int</span>&gt;&amp; a, pair&lt;<span class="built_in">string</span>, <span class="keyword">int</span>&gt;&amp; b)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(a.second == b.second) &#123;</span><br><span class="line">        <span class="keyword">return</span> a.first &gt; b.first;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> a.second &lt; b.second;</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; topKFrequent(<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt;&amp; words, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; result;</span><br><span class="line">        <span class="built_in">unordered_map</span>&lt;<span class="built_in">string</span>, <span class="keyword">int</span>&gt; <span class="built_in">map</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">string</span> word: words) &#123;</span><br><span class="line">            <span class="built_in">map</span>[word]++;</span><br><span class="line">        &#125;</span><br><span class="line">        priority_queue&lt;pair&lt;<span class="built_in">string</span>,<span class="keyword">int</span>&gt;,<span class="built_in">vector</span>&lt;pair&lt;<span class="built_in">string</span>,<span class="keyword">int</span>&gt;&gt;,cmp&gt; heap;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> it: <span class="built_in">map</span>) &#123;</span><br><span class="line">            heap.push(make_pair(it.first,it.second));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(k--&gt;<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            result.push_back(heap.top().first);</span><br><span class="line">            heap.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>STL对数据结构的帮助很大，可以很大程度减轻代码量和负担。</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>priority_queue&amp;&amp;pair&amp;&amp;unordered_map是很常用的STL封装好的库，是比vector&amp;&amp;string&amp;&amp;queue&amp;&amp;list&amp;&amp;stack更复杂的库</li>
+<li>难度中等，秒杀大学数据结构课程</li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/10/31/leetcode692/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/leetcode884/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1266,6 +1476,203 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/30/1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GeRunZe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/headimage.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GeRunZe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/30/1/" itemprop="url">从C走向C++（一）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-30T23:27:50+08:00">
+                2018-09-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/从C走向C/" itemprop="url" rel="index">
+                    <span itemprop="name">从C走向C++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  449
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="从C走向C"><a href="#从C走向C" class="headerlink" title="从C走向C++"></a>从C走向C++</h1><h2 id="一、代码风格"><a href="#一、代码风格" class="headerlink" title="一、代码风格"></a>一、代码风格</h2><blockquote>
+<p>大学里老师因为最早开始接触C语言，所以在教授C++的时候会保留大部分C式代码风格。但是老式风格已经不适应现代C++，所以我们需要转变自己的代码风格。从C++11标准千呼万唤始出来，再到C++14、C++17甚至C++20，代码风格已经从机器化代码风格逐渐走向泛型编程、模板元编程以及函数式编程，如果我们不学习新的代码书写格式，那么我们将落后于时代潮流。</p>
+</blockquote>
+<ul>
+<li>下面举几个小例子来看看C和C++风格的区别：</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a;</span><br><span class="line">a=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> *p=&amp;a;<span class="comment">//老式指针变量申明</span></span><br><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;len;i++)<span class="comment">//老式for循环书写</span></span><br></pre></td></tr></table></figure>
+<p>没错，老式代码风格让人觉得阅读困难，书写繁琐，那么我们看看现代C++风格：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span>* p=&amp;a;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br></pre></td></tr></table></figure>
+<p>效果很明显，而且不容易产生阅读困难、模棱两可的问题。</p>
+<blockquote>
+<p>int<em> p 和int </em>p虽然都是正确的代码，但是前者更能阅读者了解定义了一个指向int类型变量的指针变量p。</p>
+</blockquote>
+<ul>
+<li>定义变量名的良好习惯</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> length,width,height;<span class="comment">//显然这是很可怕的代码，如果变量名有十几个，那么将会是阅读者的灾难。</span></span><br><span class="line"><span class="keyword">int</span> length=<span class="number">0</span>;<span class="comment">//长度</span></span><br><span class="line"><span class="keyword">int</span> width=<span class="number">0</span>;<span class="comment">//宽度</span></span><br><span class="line"><span class="keyword">int</span> height=<span class="number">0</span>;<span class="comment">//高度</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>C++如果定义一个变量没有初始化，那么有些编译器会报错。所以如果不知道变量的初始值，那么可以定义为0或nullptr(不是NULL，以后会说明)。</p>
+</blockquote>
+<p>这是我的第一篇文章，希望对大家有帮助。Thanks！<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/30/1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/30/article1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1670,203 +2077,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/30/1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="GeRunZe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/headimage.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="GeRunZe">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/30/1/" itemprop="url">从C走向C++（一）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-30T23:27:50+08:00">
-                2018-09-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/从C走向C/" itemprop="url" rel="index">
-                    <span itemprop="name">从C走向C++</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  449
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="从C走向C"><a href="#从C走向C" class="headerlink" title="从C走向C++"></a>从C走向C++</h1><h2 id="一、代码风格"><a href="#一、代码风格" class="headerlink" title="一、代码风格"></a>一、代码风格</h2><blockquote>
-<p>大学里老师因为最早开始接触C语言，所以在教授C++的时候会保留大部分C式代码风格。但是老式风格已经不适应现代C++，所以我们需要转变自己的代码风格。从C++11标准千呼万唤始出来，再到C++14、C++17甚至C++20，代码风格已经从机器化代码风格逐渐走向泛型编程、模板元编程以及函数式编程，如果我们不学习新的代码书写格式，那么我们将落后于时代潮流。</p>
-</blockquote>
-<ul>
-<li>下面举几个小例子来看看C和C++风格的区别：</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a;</span><br><span class="line">a=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> *p=&amp;a;<span class="comment">//老式指针变量申明</span></span><br><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;len;i++)<span class="comment">//老式for循环书写</span></span><br></pre></td></tr></table></figure>
-<p>没错，老式代码风格让人觉得阅读困难，书写繁琐，那么我们看看现代C++风格：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span>* p=&amp;a;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)</span><br></pre></td></tr></table></figure>
-<p>效果很明显，而且不容易产生阅读困难、模棱两可的问题。</p>
-<blockquote>
-<p>int<em> p 和int </em>p虽然都是正确的代码，但是前者更能阅读者了解定义了一个指向int类型变量的指针变量p。</p>
-</blockquote>
-<ul>
-<li>定义变量名的良好习惯</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> length,width,height;<span class="comment">//显然这是很可怕的代码，如果变量名有十几个，那么将会是阅读者的灾难。</span></span><br><span class="line"><span class="keyword">int</span> length=<span class="number">0</span>;<span class="comment">//长度</span></span><br><span class="line"><span class="keyword">int</span> width=<span class="number">0</span>;<span class="comment">//宽度</span></span><br><span class="line"><span class="keyword">int</span> height=<span class="number">0</span>;<span class="comment">//高度</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>C++如果定义一个变量没有初始化，那么有些编译器会报错。所以如果不知道变量的初始值，那么可以定义为0或nullptr(不是NULL，以后会说明)。</p>
-</blockquote>
-<p>这是我的第一篇文章，希望对大家有帮助。Thanks！<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/30/1/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/30/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2093,7 +2303,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2173,7 +2383,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">17.4k</span>
+    <span title="Site words total count">17.5k</span>
   
 </div>
 
