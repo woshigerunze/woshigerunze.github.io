@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="[Leetcode]101.对称二叉树 给定一个二叉树，检查它是否是镜像对称的。 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。 123456&amp;gt;     1&amp;gt;    / \&amp;gt;   2   2&amp;gt;  / \ / \&amp;gt; 3  4 4  3&amp;gt;   但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的: 123456&amp;gt;     1&amp;g">
+<meta name="description" content="LeetCode987.二叉树的垂序遍历 给定二叉树，按垂序遍历返回其结点值。 对位于 (X, Y) 的每个结点而言，其左右子结点分别位于 (X-1, Y-1) 和 (X+1, Y-1)。 把一条垂线从 X = -infinity 移动到 X = +infinity ，每当该垂线与结点接触时，我们按从上到下的顺序报告结点的值（ Y 坐标递减）。 如果两个结点位置相同，则首先报告的结点值较小。 按">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode101.对称二叉树">
-<meta property="og:url" content="http://yoursite.com/2018/11/06/leetcode101/index.html">
+<meta property="og:title" content="LeetCode987.二叉树的垂序遍历">
+<meta property="og:url" content="http://yoursite.com/2019/03/06/leetcode987/index.html">
 <meta property="og:site_name" content="GeRunZe">
-<meta property="og:description" content="[Leetcode]101.对称二叉树 给定一个二叉树，检查它是否是镜像对称的。 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。 123456&amp;gt;     1&amp;gt;    / \&amp;gt;   2   2&amp;gt;  / \ / \&amp;gt; 3  4 4  3&amp;gt;   但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的: 123456&amp;gt;     1&amp;g">
+<meta property="og:description" content="LeetCode987.二叉树的垂序遍历 给定二叉树，按垂序遍历返回其结点值。 对位于 (X, Y) 的每个结点而言，其左右子结点分别位于 (X-1, Y-1) 和 (X+1, Y-1)。 把一条垂线从 X = -infinity 移动到 X = +infinity ，每当该垂线与结点接触时，我们按从上到下的顺序报告结点的值（ Y 坐标递减）。 如果两个结点位置相同，则首先报告的结点值较小。 按">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-21T07:29:19.461Z">
+<meta property="og:image" content="http://yoursite.com/Users/gerunze/Pictures/tree1.PNG">
+<meta property="og:image" content="http://yoursite.com/Users/gerunze/Pictures/tree2.png">
+<meta property="og:updated_time" content="2019-03-06T13:22:20.006Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LeetCode101.对称二叉树">
-<meta name="twitter:description" content="[Leetcode]101.对称二叉树 给定一个二叉树，检查它是否是镜像对称的。 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。 123456&amp;gt;     1&amp;gt;    / \&amp;gt;   2   2&amp;gt;  / \ / \&amp;gt; 3  4 4  3&amp;gt;   但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的: 123456&amp;gt;     1&amp;g">
+<meta name="twitter:title" content="LeetCode987.二叉树的垂序遍历">
+<meta name="twitter:description" content="LeetCode987.二叉树的垂序遍历 给定二叉树，按垂序遍历返回其结点值。 对位于 (X, Y) 的每个结点而言，其左右子结点分别位于 (X-1, Y-1) 和 (X+1, Y-1)。 把一条垂线从 X = -infinity 移动到 X = +infinity ，每当该垂线与结点接触时，我们按从上到下的顺序报告结点的值（ Y 坐标递减）。 如果两个结点位置相同，则首先报告的结点值较小。 按">
+<meta name="twitter:image" content="http://yoursite.com/Users/gerunze/Pictures/tree1.PNG">
 
 
 
@@ -119,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/06/leetcode101/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/06/leetcode987/"/>
 
 
 
 
 
-  <title>LeetCode101.对称二叉树 | GeRunZe</title>
+  <title>LeetCode987.二叉树的垂序遍历 | GeRunZe</title>
   
 
 
@@ -262,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/06/leetcode101/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/06/leetcode987/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GeRunZe">
@@ -279,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">LeetCode101.对称二叉树</h1>
+          <h1 class="post-title" itemprop="name headline">LeetCode987.二叉树的垂序遍历</h1>
         
 
         <div class="post-meta">
@@ -291,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-06T22:00:53+08:00">
-                2018-11-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-06T21:22:20+08:00">
+                2019-03-06
               </time>
             
 
@@ -345,7 +348,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  418
+                  607
                 </span>
               
 
@@ -361,7 +364,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -382,33 +385,33 @@
       
 
       
-        <h1 id="Leetcode-101-对称二叉树"><a href="#Leetcode-101-对称二叉树" class="headerlink" title="[Leetcode]101.对称二叉树"></a><a href="https://leetcode-cn.com/problems/symmetric-tree/" target="_blank" rel="noopener">[Leetcode]101.对称二叉树</a></h1><blockquote>
-<p>给定一个二叉树，检查它是否是镜像对称的。</p>
-<p>例如，二叉树 <code>[1,2,2,3,4,4,3]</code> 是对称的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;     1</span><br><span class="line">&gt;    / \</span><br><span class="line">&gt;   2   2</span><br><span class="line">&gt;  / \ / \</span><br><span class="line">&gt; 3  4 4  3</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+        <h1 id="LeetCode987-二叉树的垂序遍历"><a href="#LeetCode987-二叉树的垂序遍历" class="headerlink" title="LeetCode987.二叉树的垂序遍历"></a><a href="https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/" target="_blank" rel="noopener">LeetCode987.二叉树的垂序遍历</a></h1><blockquote>
+<p>给定二叉树，按<em>垂序</em>遍历返回其结点值。</p>
+<p>对位于 <code>(X, Y)</code> 的每个结点而言，其左右子结点分别位于 <code>(X-1, Y-1)</code> 和 <code>(X+1, Y-1)</code>。</p>
+<p>把一条垂线从 <code>X = -infinity</code> 移动到 <code>X = +infinity</code> ，每当该垂线与结点接触时，我们按从上到下的顺序报告结点的值（ <code>Y</code> 坐标递减）。</p>
+<p>如果两个结点位置相同，则首先报告的结点值较小。</p>
+<p>按 <code>X</code> 坐标顺序返回非空报告的列表。每个报告都有一个结点值列表。</p>
+<p><strong>示例 1：</strong></p>
+<p><img src="/Users/gerunze/Pictures/tree1.PNG" alt="tree1"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt; 输入：[3,9,20,null,null,15,7]</span><br><span class="line">&gt; 输出：[[9],[3,15],[20],[7]]</span><br><span class="line">&gt; 解释： </span><br><span class="line">&gt; 在不丧失其普遍性的情况下，我们可以假设根结点位于 (0, 0)：</span><br><span class="line">&gt; 然后，值为 9 的结点出现在 (-1, -1)；</span><br><span class="line">&gt; 值为 3 和 15 的两个结点分别出现在 (0, 0) 和 (0, -2)；</span><br><span class="line">&gt; 值为 20 的结点出现在 (1, -1)；</span><br><span class="line">&gt; 值为 7 的结点出现在 (2, -2)。</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <blockquote>
-<p>但是下面这个 <code>[1,2,2,null,3,null,3]</code> 则不是镜像对称的:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;     1</span><br><span class="line">&gt;    / \</span><br><span class="line">&gt;   2   2</span><br><span class="line">&gt;    \   \</span><br><span class="line">&gt;    3    3</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>示例 2：</strong></p>
+<p><img src="/Users/gerunze/Pictures/tree2.png" alt="tree2">**</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; 输入：[1,2,3,4,5,6,7]</span><br><span class="line">&gt; 输出：[[4],[2],[1,5,6],[3],[7]]</span><br><span class="line">&gt; 解释：</span><br><span class="line">&gt; 根据给定的方案，值为 5 和 6 的两个结点出现在同一位置。</span><br><span class="line">&gt; 然而，在报告 &quot;[1,5,6]&quot; 中，结点值 5 排在前面，因为 5 小于 6。</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <blockquote>
-<p><strong>说明:</strong></p>
-<p>如果你可以运用递归和迭代两种方法解决这个问题，会很加分。</p>
+<p><strong>提示：</strong></p>
+<ol>
+<li>树的结点数介于 <code>1</code> 和 <code>1000</code> 之间。</li>
+<li>每个结点值介于 <code>0</code> 和 <code>1000</code> 之间。</li>
+</ol>
 </blockquote>
-<a id="more"></a>
 <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><ul>
-<li>如果一个二叉树是对称的，那么它的左子树和右子树也是<strong>相互</strong>对称的</li>
-<li>判断符号必然是&amp;&amp;，算法为递归</li>
+<li>把树的每一个的节点的坐标都形成映射，保存在vector中</li>
+<li>根据题目的需求将vector排序</li>
 </ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * struct TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode *left;</span></span><br><span class="line"><span class="comment"> *     TreeNode *right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isSymmetric</span><span class="params">(TreeNode* root1,TreeNode* root2)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root1==<span class="literal">NULL</span>&amp;&amp;root2==<span class="literal">NULL</span>)<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span>(root1==<span class="literal">NULL</span>||root2==<span class="literal">NULL</span>)<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">if</span>(root1-&gt;val!=root2-&gt;val)<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">return</span> isSymmetric(root1-&gt;left,root2-&gt;right)&amp;&amp;isSymmetric(root1-&gt;right,root2-&gt;left);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">isSymmetric</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> isSymmetric(root,root);<span class="comment">//传入两个相同的树</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>在函数调用中，我们传入两个相同的根节点，仿佛把一棵树变成了两棵树，这样判断会简单一点</li>
-<li>在递归过程中，实际上等于把根节点的任务下派到下面的节点，直至叶子节点，然后从叶子节点判断然后一层层向上返回结果</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
-<li>递归代码虽然简洁，但是信息量太大，人脑模拟递归真的很痛苦</li>
-<li>树的问题最终会通过递归下派到左子树和右子树的<strong>子问题</strong>，然后一级一级向上返回结果</li>
-</ul>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;pair&lt;pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;,<span class="keyword">int</span>&gt;&gt; position;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(TreeNode* root,<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root==<span class="literal">nullptr</span>)<span class="keyword">return</span>;</span><br><span class="line">        pair&lt;pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;,<span class="keyword">int</span> &gt; a;</span><br><span class="line">        pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; temp=make_pair(x,y);</span><br><span class="line">        a.first=temp;</span><br><span class="line">        a.second=root-&gt;val;</span><br><span class="line">        position.push_back(a);</span><br><span class="line">        fun(root-&gt;left,x<span class="number">-1</span>,y<span class="number">-1</span>);</span><br><span class="line">        fun(root-&gt;right,x+<span class="number">1</span>,y<span class="number">-1</span>);       </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; verticalTraversal(TreeNode* root) &#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&gt; res;</span><br><span class="line">        fun(root,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">        sort(position.begin(),position.end(),[](<span class="keyword">auto</span>&amp; p1,<span class="keyword">auto</span>&amp; p2)</span><br><span class="line">             &#123;</span><br><span class="line">                <span class="keyword">if</span>(p1.first.first==p2.first.first&amp;&amp;p1.first.second==p2.first.second)</span><br><span class="line">                    <span class="keyword">return</span> p1.second&lt;p2.second;</span><br><span class="line">                <span class="keyword">if</span>(p1.first.first==p2.first.first)</span><br><span class="line">                    <span class="keyword">return</span> p1.first.second&gt;p2.first.second;</span><br><span class="line">                 <span class="keyword">return</span> p1.first.first&lt;p2.first.first;</span><br><span class="line">             &#125;);</span><br><span class="line">        <span class="keyword">int</span> minx=position[<span class="number">0</span>].first.first;</span><br><span class="line">        <span class="keyword">int</span> maxx=position[position.size()<span class="number">-1</span>].first.first;</span><br><span class="line">        <span class="keyword">while</span>(minx&lt;=maxx)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; temp;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">auto</span>&amp; p: position)</span><br><span class="line">                <span class="keyword">if</span>(p.first.first==minx)temp.push_back(p.second);</span><br><span class="line">            res.push_back(temp);</span><br><span class="line">            minx++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -462,8 +465,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/05/leetcode112/" rel="next" title="LeetCode112.路径总和">
-                <i class="fa fa-chevron-left"></i> LeetCode112.路径总和
+              <a href="/2019/02/21/leetcode993/" rel="next" title="LeetCode993.二叉树堂兄弟节点">
+                <i class="fa fa-chevron-left"></i> LeetCode993.二叉树堂兄弟节点
               </a>
             
           </div>
@@ -471,10 +474,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/14/leetcode938/" rel="prev" title="LeetCode938.二叉搜索树的范围和">
-                LeetCode938.二叉搜索树的范围和 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -617,7 +616,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Leetcode-101-对称二叉树"><span class="nav-number">1.</span> <span class="nav-text">[Leetcode]101.对称二叉树</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.2.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LeetCode987-二叉树的垂序遍历"><span class="nav-number">1.</span> <span class="nav-text">LeetCode987.二叉树的垂序遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#思路"><span class="nav-number">1.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.2.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
             
 
           </div>
