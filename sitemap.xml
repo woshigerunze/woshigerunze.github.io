@@ -4,7 +4,7 @@
   <url>
     <loc>http://yoursite.com/2019/03/06/leetcode987/</loc>
     
-    <lastmod>2019-03-06T13:22:20.006Z</lastmod>
+    <lastmod>2019-03-07T12:31:44.403Z</lastmod>
     
   </url>
   
@@ -142,13 +142,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/09/30/article2/</loc>
-    
-    <lastmod>2018-10-11T10:33:30.516Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/article2.html</loc>
     
     <lastmod>2018-10-11T10:33:30.516Z</lastmod>
@@ -156,14 +149,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/09/30/article1/</loc>
+    <loc>http://yoursite.com/2018/09/30/article2/</loc>
+    
+    <lastmod>2018-10-11T10:33:30.516Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/article1.html</loc>
     
     <lastmod>2018-10-10T14:38:34.925Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/article1.html</loc>
+    <loc>http://yoursite.com/2018/09/30/article1/</loc>
     
     <lastmod>2018-10-10T14:38:34.925Z</lastmod>
     
