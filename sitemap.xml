@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/03/08/moderncpp3/</loc>
+    
+    <lastmod>2019-03-08T09:58:16.260Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/03/07/moderncpp2/</loc>
     
     <lastmod>2019-03-07T15:52:27.030Z</lastmod>
@@ -135,13 +142,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/10/12/c1/</loc>
-    
-    <lastmod>2018-10-12T14:24:08.341Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/c1.html</loc>
     
     <lastmod>2018-10-12T14:24:08.341Z</lastmod>
@@ -149,14 +149,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/09/30/article2/</loc>
+    <loc>http://yoursite.com/2018/10/12/c1/</loc>
+    
+    <lastmod>2018-10-12T14:24:08.341Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/article2.html</loc>
     
     <lastmod>2018-10-11T10:33:30.516Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/article2.html</loc>
+    <loc>http://yoursite.com/2018/09/30/article2/</loc>
     
     <lastmod>2018-10-11T10:33:30.516Z</lastmod>
     
