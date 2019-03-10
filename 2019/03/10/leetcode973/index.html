@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="LeetCode973.最接近原点的K个点 我们有一个由平面上的点组成的列表 points。需要从中找出 K 个距离原点 (0, 0) 最近的点。 （这里，平面上两点之间的距离是欧几里德距离。） 你可以按任何顺序返回答案。除了点坐标的顺序之外，答案确保是唯一的。 示例 1： 12345678&amp;gt; 输入：points = [[1,3],[-2,2]], K = 1&amp;gt; 输出：[[-2,2]]">
+<meta name="description" content="LeetCode973.最接近原点的K个点 我们有一个由平面上的点组成的列表 points。需要从中找出 K 个距离原点 (0, 0) 最近的点。 （这里，平面上两点之间的距离是欧几里德距离。） 你可以按任何顺序返回答案。除了点坐标的顺序之外，答案确保是唯一的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GeRunZe">
+<meta property="og:title" content="LeetCode973.最接近原点的K个点">
 <meta property="og:url" content="http://yoursite.com/2019/03/10/leetcode973/index.html">
 <meta property="og:site_name" content="GeRunZe">
-<meta property="og:description" content="LeetCode973.最接近原点的K个点 我们有一个由平面上的点组成的列表 points。需要从中找出 K 个距离原点 (0, 0) 最近的点。 （这里，平面上两点之间的距离是欧几里德距离。） 你可以按任何顺序返回答案。除了点坐标的顺序之外，答案确保是唯一的。 示例 1： 12345678&amp;gt; 输入：points = [[1,3],[-2,2]], K = 1&amp;gt; 输出：[[-2,2]]">
+<meta property="og:description" content="LeetCode973.最接近原点的K个点 我们有一个由平面上的点组成的列表 points。需要从中找出 K 个距离原点 (0, 0) 最近的点。 （这里，平面上两点之间的距离是欧几里德距离。） 你可以按任何顺序返回答案。除了点坐标的顺序之外，答案确保是唯一的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-10T06:14:05.551Z">
+<meta property="og:updated_time" content="2019-03-10T06:16:00.808Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GeRunZe">
-<meta name="twitter:description" content="LeetCode973.最接近原点的K个点 我们有一个由平面上的点组成的列表 points。需要从中找出 K 个距离原点 (0, 0) 最近的点。 （这里，平面上两点之间的距离是欧几里德距离。） 你可以按任何顺序返回答案。除了点坐标的顺序之外，答案确保是唯一的。 示例 1： 12345678&amp;gt; 输入：points = [[1,3],[-2,2]], K = 1&amp;gt; 输出：[[-2,2]]">
+<meta name="twitter:title" content="LeetCode973.最接近原点的K个点">
+<meta name="twitter:description" content="LeetCode973.最接近原点的K个点 我们有一个由平面上的点组成的列表 points。需要从中找出 K 个距离原点 (0, 0) 最近的点。 （这里，平面上两点之间的距离是欧几里德距离。） 你可以按任何顺序返回答案。除了点坐标的顺序之外，答案确保是唯一的。">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title> | GeRunZe</title>
+  <title>LeetCode973.最接近原点的K个点 | GeRunZe</title>
   
 
 
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">LeetCode973.最接近原点的K个点</h1>
         
 
         <div class="post-meta">
@@ -301,6 +301,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Leetcodeee/" itemprop="url" rel="index">
+                    <span itemprop="name">Leetcodeee</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -364,6 +386,7 @@
 <p>我们有一个由平面上的点组成的列表 <code>points</code>。需要从中找出 <code>K</code> 个距离原点 <code>(0, 0)</code> 最近的点。</p>
 <p>（这里，平面上两点之间的距离是欧几里德距离。）</p>
 <p>你可以按任何顺序返回答案。除了点坐标的顺序之外，答案确保是唯一的。</p>
+ <a id="more"></a>
 <p><strong>示例 1：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; 输入：points = [[1,3],[-2,2]], K = 1</span><br><span class="line">&gt; 输出：[[-2,2]]</span><br><span class="line">&gt; 解释： </span><br><span class="line">&gt; (1, 3) 和原点之间的距离为 sqrt(10)，</span><br><span class="line">&gt; (-2, 2) 和原点之间的距离为 sqrt(8)，</span><br><span class="line">&gt; 由于 sqrt(8) &lt; sqrt(10)，(-2, 2) 离原点更近。</span><br><span class="line">&gt; 我们只需要距离原点最近的 K = 1 个点，所以答案就是 [[-2,2]]。</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
