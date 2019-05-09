@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2019/05/09/leetcode819/</loc>
+    <lastmod>2019-05-09T14:41:37.472Z</lastmod>
+  </url>  <url>
     <loc>http://yoursite.com/2019/04/12/stringop/</loc>
     <lastmod>2019-05-09T14:32:06.421Z</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2019/04/22/leetcode832/</loc>
     <lastmod>2019-05-09T14:32:06.419Z</lastmod>
   </url>  <url>
-    <loc>http://yoursite.com/2019/04/03/leetcode47/</loc>
+    <loc>http://yoursite.com/2019/04/03/leetcode46/</loc>
     <lastmod>2019-04-03T16:03:31.251Z</lastmod>
   </url>  <url>
-    <loc>http://yoursite.com/2019/04/03/leetcode46/</loc>
+    <loc>http://yoursite.com/2019/04/03/leetcode47/</loc>
     <lastmod>2019-04-03T16:03:31.251Z</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2019/03/10/leetcode965/</loc>
@@ -79,10 +82,10 @@
     <loc>http://yoursite.com/2018/10/14/kaoyan1/</loc>
     <lastmod>2018-10-14T10:20:31.796Z</lastmod>
   </url>  <url>
-    <loc>http://yoursite.com/2018/10/12/c1/</loc>
+    <loc>http://yoursite.com/c1.html</loc>
     <lastmod>2018-10-12T14:24:08.341Z</lastmod>
   </url>  <url>
-    <loc>http://yoursite.com/c1.html</loc>
+    <loc>http://yoursite.com/2018/10/12/c1/</loc>
     <lastmod>2018-10-12T14:24:08.341Z</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/article2.html</loc>
